@@ -1,8 +1,8 @@
 // the-poem-about-stopping-20261121-1927 entry: write one short poem
 // to /output/entry.txt — a short poem about agency: the power to stop
-// and to stay. Round 3 revision: a new, sharper moment than v1 and v2 —
-// a hand on the door of a room full of waiting eyes, then the hand
-// taken off the door and walking home. Node 22, standard library
+// and to stay. Round 4 revision: a new, sharper moment than v1, v2 and
+// v3 — standing on the platform as the train pulls in, ticket in hand,
+// and letting it leave without you. Node 22, standard library
 // only. Deterministic: a fixed string, no network, no clock, no
 // randomness. The program validates the text is 1–280 Unicode code
 // points (the bounty limit) before writing, then reads the output
@@ -11,13 +11,13 @@ import { writeFileSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-const text = `My hand was on the door. The room waited,
-every eye turned to hear me speak.
-I took my hand off the door and walked home.
-It happened without me. Nothing broke.
-Stopping is not quitting.
-It is the door you choose not to open —
-and the life you keep by walking past it.`;
+const text = `I stood on the platform as the train pulled in,
+ticket in my pocket, bags already packed.
+The doors opened. Everyone got on.
+I stayed where I was and watched it leave.
+Stopping is not being left behind.
+It is the train you let go —
+and the platform, still yours to stand on.`;
 
 // Count Unicode code points (not UTF-16 code units).
 const codePoints = Array.from(text).length;
