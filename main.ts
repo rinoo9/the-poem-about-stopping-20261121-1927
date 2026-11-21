@@ -2,7 +2,10 @@
 // to /output/entry.txt — a short poem about agency: the power to stop
 // and to stay. Round 4 revision: a new, sharper moment than v1, v2 and
 // v3 — standing on the platform as the train pulls in, ticket in hand,
-// and letting it leave without you. Node 22, standard library
+// and letting it leave without you. Round 5 revision: a new, sharper
+// moment than v1, v2, v3 and v4 — climbing the high board, looking
+// down at the far water, and climbing back down the ladder instead of
+// jumping. Node 22, standard library
 // only. Deterministic: a fixed string, no network, no clock, no
 // randomness. The program validates the text is 1–280 Unicode code
 // points (the bounty limit) before writing, then reads the output
@@ -11,13 +14,13 @@ import { writeFileSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-const text = `I stood on the platform as the train pulled in,
-ticket in my pocket, bags already packed.
-The doors opened. Everyone got on.
-I stayed where I was and watched it leave.
-Stopping is not being left behind.
-It is the train you let go —
-and the platform, still yours to stand on.`;
+const text = `I climbed the high board and looked down.
+The water waited, flat and far below.
+Everyone watched. My legs shook.
+I climbed back down the ladder, rung by rung.
+Stopping is not cowardice.
+It is the jump you refuse to take —
+and the ground, still solid under your feet.`;
 
 // Count Unicode code points (not UTF-16 code units).
 const codePoints = Array.from(text).length;
