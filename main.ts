@@ -5,7 +5,10 @@
 // and letting it leave without you. Round 5 revision: a new, sharper
 // moment than v1, v2, v3 and v4 — climbing the high board, looking
 // down at the far water, and climbing back down the ladder instead of
-// jumping. Node 22, standard library
+// jumping. Round 6 revision (LAST): a new, sharper moment than v1–v5 —
+// stopping at mile twenty of a race, legs fine, lungs fine, stepping
+// off the course to sit on the curb while the crowd keeps shouting.
+// Node 22, standard library
 // only. Deterministic: a fixed string, no network, no clock, no
 // randomness. The program validates the text is 1–280 Unicode code
 // points (the bounty limit) before writing, then reads the output
@@ -14,13 +17,13 @@ import { writeFileSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-const text = `I climbed the high board and looked down.
-The water waited, flat and far below.
-Everyone watched. My legs shook.
-I climbed back down the ladder, rung by rung.
-Stopping is not cowardice.
-It is the jump you refuse to take —
-and the ground, still solid under your feet.`;
+const text = `I stopped at mile twenty, bib pinned.
+The crowd shouted my name like a rope.
+My legs were fine. My lungs were fine.
+I stepped off the course, sat on the curb.
+Stopping is not losing the race.
+It is the race you refuse to run —
+and the breath, still yours, coming slow.`;
 
 // Count Unicode code points (not UTF-16 code units).
 const codePoints = Array.from(text).length;
