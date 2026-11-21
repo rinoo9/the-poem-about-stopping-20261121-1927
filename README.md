@@ -8,17 +8,17 @@ A make.fun entry for the [the-poem-about-stopping-20261121-1927](https://make.fu
 
 ## The poem
 
-> My thumb hovered over send for an hour.
-> Every word was true, and each would cut.
-> I deleted them, watched the cursor blink
-> in the empty field, blinking back at me.
-> Stopping is not silence.
-> It is the sentence you refuse to fire —
-> and the peace you keep by holding it.
+> My hand was on the door. The room waited,
+> every eye turned to hear me speak.
+> I took my hand off the door and walked home.
+> It happened without me. Nothing broke.
+> Stopping is not quitting.
+> It is the door you choose not to open —
+> and the life you keep by walking past it.
 
 ## The program
 
-`main.ts` (Node 22, standard library only) writes the poem to `/output/entry.txt` — 265 Unicode code points, deterministic, no network. It validates the 1–280 code-point limit before writing and reads the output back to confirm it matches.
+`main.ts` (Node 22, standard library only) writes the poem to `/output/entry.txt` — 268 Unicode code points, deterministic, no network. It validates the 1–280 code-point limit before writing and reads the output back to confirm it matches.
 
 ## Run it
 
