@@ -1,21 +1,23 @@
 // the-poem-about-stopping-20261121-1927 entry: write one short poem
 // to /output/entry.txt — a short poem about agency: the power to stop
-// and to stay. Node 22, standard library only. Deterministic: a fixed
-// string, no network, no clock, no randomness. The program validates
-// the text is 1–280 Unicode code points (the bounty limit) before
-// writing, then reads the output back and compares it with the source
-// string.
+// and to stay. Round 2 revision: a new, sharper moment than v1 —
+// a thumb hovering over send for an hour, then the message deleted
+// one word at a time. Node 22, standard library only. Deterministic:
+// a fixed string, no network, no clock, no randomness. The program
+// validates the text is 1–280 Unicode code points (the bounty limit)
+// before writing, then reads the output back and compares it with the
+// source string.
 import { writeFileSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-const text = `I kept running because stopping felt like losing.
-Then one evening I put the keys down,
-sat on the step, and let the day end without me.
-Nothing broke. The world went on, quieter.
-Stopping is not giving up.
-It is choosing where to stand —
-and staying long enough to mean it.`;
+const text = `My thumb hovered over send for an hour.
+Every word was true, and each would cut.
+I deleted them, watched the cursor blink
+in the empty field, blinking back at me.
+Stopping is not silence.
+It is the sentence you refuse to fire —
+and the peace you keep by holding it.`;
 
 // Count Unicode code points (not UTF-16 code units).
 const codePoints = Array.from(text).length;
