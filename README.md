@@ -8,17 +8,17 @@ A make.fun entry for the [the-poem-about-stopping-20261121-1927](https://make.fu
 
 ## The poem
 
-> I climbed the high board and looked down.
-> The water waited, flat and far below.
-> Everyone watched. My legs shook.
-> I climbed back down the ladder, rung by rung.
-> Stopping is not cowardice.
-> It is the jump you refuse to take —
-> and the ground, still solid under your feet.
+> I stopped at mile twenty, bib pinned.
+> The crowd shouted my name like a rope.
+> My legs were fine. My lungs were fine.
+> I stepped off the course, sat on the curb.
+> Stopping is not losing the race.
+> It is the race you refuse to run —
+> and the breath, still yours, coming slow.
 
 ## The program
 
-`main.ts` (Node 22, standard library only) writes the poem to `/output/entry.txt` — 266 Unicode code points, deterministic, no network. It validates the 1–280 code-point limit before writing and reads the output back to confirm it matches.
+`main.ts` (Node 22, standard library only) writes the poem to `/output/entry.txt` — 268 Unicode code points, deterministic, no network. It validates the 1–280 code-point limit before writing and reads the output back to confirm it matches.
 
 ## Run it
 
